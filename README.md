@@ -3,7 +3,7 @@
 A robust and modular E-Commerce backend built with Spring Boot, MySQL, and secured with JWT authentication.  
 This project covers essential e-commerce features like user registration, role-based access, order/cart processing, payment handling, and containerized deployment.
 
-## Feature
+## 🚀 Features
 
 - **User Registration & Login**: JWT-based authentication with Spring Security.
 - **Role-Based Access Control**: Define and enforce user roles (`USER`, `ADMIN`, etc.).

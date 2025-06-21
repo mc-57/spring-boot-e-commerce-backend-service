@@ -1,8 +1,9 @@
 # 🛒 Spring Boot E-Commerce Backend Service
 
-A robust and modular E-Commerce backend built with Spring Boot, MySQL, and secured with JWT authentication.
-This project covers essential e-commerce features like user registration, role-based access, order/cart processing,
-payment handling, and containerized deployment.
+A robust and modular E-Commerce backend built with Spring Boot, MySQL, and secured with JWT authentication.  
+This project covers essential e-commerce features like user registration, role-based access, order/cart processing, payment handling, and containerized deployment.
+
+---
 
 ## Feature
 
@@ -15,6 +16,8 @@ payment handling, and containerized deployment.
 - **Database Seeding**: Beginner-friendly approach for initial data setup.
 - **Docker Support**: Easily containerized using Docker and Docker Compose.
 
+---
+
 ## 🧰 Tech Stack
 
 - **Language**: Java 17+
@@ -25,12 +28,15 @@ payment handling, and containerized deployment.
 - **Containerization**: Docker + Docker Compose
 - **Testing**: JUnit 5 + Mockito
 
-## 🐳 Docker Image
+---
 
+## 🐳 Docker Image
 
 You can use the pre-built Docker image directly from Docker Hub:
 
 🔗 [michellec07/spring-boot-e-commerce-backend](https://hub.docker.com/r/michellec07/spring-boot-e-commerce-backend)
+
+---
 
 ## ⚙️ Setup Instruction (Docker Only)
 
@@ -43,7 +49,7 @@ Ensure you have the following installed:
 
 Clone this repository to get the necessary files:
 
-- `docker-compose.yml` — defines the backend and MySQL containers
+- `docker-compose.yml` — defines the backend and MySQL containers  
 - `init.sql` — initializes the MySQL database with sample data
 
 ---
@@ -57,8 +63,3 @@ docker pull michellec07/spring-boot-e-commerce-backend:latest
 # Step 2: Start backend and MySQL containers
 docker-compose up -d
 
----
-
-### 📺 Access the Application
-
-Visit [http://localhost:8080/swagger-ui](http://localhost:8080/swagger-ui) in your browser to access the Swagger UI for testing the API.

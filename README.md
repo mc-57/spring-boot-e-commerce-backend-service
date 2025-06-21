@@ -3,8 +3,6 @@
 A robust and modular E-Commerce backend built with Spring Boot, MySQL, and secured with JWT authentication.  
 This project covers essential e-commerce features like user registration, role-based access, order/cart processing, payment handling, and containerized deployment.
 
----
-
 ## Feature
 
 - **User Registration & Login**: JWT-based authentication with Spring Security.
@@ -16,8 +14,6 @@ This project covers essential e-commerce features like user registration, role-b
 - **Database Seeding**: Beginner-friendly approach for initial data setup.
 - **Docker Support**: Easily containerized using Docker and Docker Compose.
 
----
-
 ## 🧰 Tech Stack
 
 - **Language**: Java 17+
@@ -28,15 +24,11 @@ This project covers essential e-commerce features like user registration, role-b
 - **Containerization**: Docker + Docker Compose
 - **Testing**: JUnit 5 + Mockito
 
----
-
 ## 🐳 Docker Image
 
 You can use the pre-built Docker image directly from Docker Hub:
 
 🔗 [michellec07/spring-boot-e-commerce-backend](https://hub.docker.com/r/michellec07/spring-boot-e-commerce-backend)
-
----
 
 ## ⚙️ Setup Instruction (Docker Only)
 
@@ -51,8 +43,6 @@ Clone this repository to get the necessary files:
 
 - `docker-compose.yml` — defines the backend and MySQL containers  
 - `init.sql` — initializes the MySQL database with sample data
-
----
 
 ### ▶️ Run the Application
 

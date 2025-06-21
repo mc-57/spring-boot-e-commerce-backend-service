@@ -52,4 +52,8 @@ docker pull michellec07/spring-boot-e-commerce-backend:latest
 
 # Step 2: Start backend and MySQL containers
 docker-compose up -d
+```
 
+### 📺 Access the Application
+
+Visit [http://localhost:8080/swagger-ui](http://localhost:8080/swagger-ui) in your browser to access the Swagger UI for testing the API.

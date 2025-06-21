@@ -1,8 +1,12 @@
+# 🛒 Spring Boot E-Commerce Backend Service
+
 A robust and modular E-Commerce backend built with Spring Boot, MySQL, and secured with JWT authentication.
 This project covers essential e-commerce features like user registration, role-based access, order/cart processing,
 payment handling, and containerized deployment.
 
-## Features
+---
+
+## 🚀 Features
 
 - **User Registration & Login**: JWT-based authentication with Spring Security.
 - **Role-Based Access Control**: Define and enforce user roles (`USER`, `ADMIN`, etc.).
@@ -13,7 +17,9 @@ payment handling, and containerized deployment.
 - **Database Seeding**: Beginner-friendly approach for initial data setup.
 - **Docker Support**: Easily containerized using Docker and Docker Compose.
 
-## Tech Stack
+---
+
+## 🧰 Tech Stack
 
 - **Language**: Java 17+
 - **Framework**: Spring Boot
@@ -23,21 +29,43 @@ payment handling, and containerized deployment.
 - **Containerization**: Docker + Docker Compose
 - **Testing**: JUnit 5 + Mockito
 
-## Setup Instructions (Docker Only)
+---
 
-### Prerequisites
+## 🐳 Docker Image
 
-- Docker & Docker Compose installed
-- Files required:
-  - `init.sql` (used to initialize the database)
-  - `ecommerce-backend-image.tar` (your pre-built Docker image)
-  - `docker-compose.yml` (defines MySQL + backend containers)
+You can use the pre-built Docker image directly from Docker Hub:
 
-### Load and Run
+🔗 [michellec07/spring-boot-e-commerce-backend](https://hub.docker.com/r/michellec07/spring-boot-e-commerce-backend)
+
+---
+
+## ⚙️ Setup Instructions (Docker Only)
+
+### 📦 Prerequisites
+
+Ensure you have the following installed:
+
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+
+Clone this repository to get the necessary files:
+
+- `docker-compose.yml` — defines the backend and MySQL containers
+- `init.sql` — initializes the MySQL database with sample data
+
+---
+
+### ▶️ Run the Application
 
 ```bash
-# 1. Load the pre-built backend image
-docker load -i ecommerce-backend-image.tar
+# Step 1: Pull the pre-built backend image from Docker Hub
+docker pull michellec07/spring-boot-e-commerce-backend:latest
 
-# 2. Start the backend and MySQL services
+# Step 2: Start backend and MySQL containers
 docker-compose up -d
+
+---
+
+### 📺 Access the Application
+
+Visit [http://localhost:8080/swagger-ui](http://localhost:8080/swagger-ui) in your browser to access the Swagger UI for testing the API.

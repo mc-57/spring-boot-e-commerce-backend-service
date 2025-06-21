@@ -1,0 +1,43 @@
+A robust and modular E-Commerce backend built with Spring Boot, MySQL, and secured with JWT authentication.
+This project covers essential e-commerce features like user registration, role-based access, order/cart processing,
+payment handling, and containerized deployment.
+
+## Features
+
+- **User Registration & Login**: JWT-based authentication with Spring Security.
+- **Role-Based Access Control**: Define and enforce user roles (`USER`, `ADMIN`, etc.).
+- **Product Catalog (WIP)**: Scalable structure for adding product features.
+- **Cart & Order System**: Add items to cart, place orders, and manage order lifecycle.
+- **Payment Integration**: Basic implementation with support for payment success/failure callbacks.
+- **JWT Authentication**: Secure login with token generation and validation.
+- **Database Seeding**: Beginner-friendly approach for initial data setup.
+- **Docker Support**: Easily containerized using Docker and Docker Compose.
+
+## Tech Stack
+
+- **Language**: Java 17+
+- **Framework**: Spring Boot
+- **Persistence**: Spring Data JPA, MySQL
+- **Security**: Spring Security + JWT
+- **Documentation**: Swagger (SpringDoc)
+- **Containerization**: Docker + Docker Compose
+- **Testing**: JUnit 5 + Mockito
+
+## Setup Instructions (Docker Only)
+
+### Prerequisites
+
+- Docker & Docker Compose installed
+- Files required:
+  - `init.sql` (used to initialize the database)
+  - `ecommerce-backend-image.tar` (your pre-built Docker image)
+  - `docker-compose.yml` (defines MySQL + backend containers)
+
+### Load and Run
+
+```bash
+# 1. Load the pre-built backend image
+docker load -i ecommerce-backend-image.tar
+
+# 2. Start the backend and MySQL services
+docker-compose up -d
